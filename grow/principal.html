@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="nome"></h1>
+        <h1 id="idade"></h1>
+        <h1 id="email"></h1>
+    </div>
+</body>
+</html>
+<script>
+    const armazen = JSON.parse(localStorage.getItem('user'));
+    console.log(armazen)
+
+    document.getElementById('nome').textContent ="Nome: "+ armazen.nome;
+    document.getElementById('idade').textContent = "Idade: "+ armazen.idade;
+    document.getElementById('email').textContent = "Email: " + armazen.email;
+</script>
