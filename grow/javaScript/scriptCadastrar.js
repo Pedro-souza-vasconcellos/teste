@@ -93,7 +93,7 @@ function newUsuario() {
     `;
 
     const myInit = {
-        method: 'POST',
+        method: 'PUT',
         headers: { 'Content-Type': 'application/xml' },
         body: xmlData,
     };
