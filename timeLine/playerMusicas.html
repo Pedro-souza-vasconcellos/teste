@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música</title>s
+    <link rel="website icon" type="png" href="assets/images/outros/logo.png">
+    <link rel="stylesheet" href="stylePlayer.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containerr">
+          <img src="assets/images/outros/logo.png" alt="Logo" id="logo">
+          <h1 style="color: white; font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">TimeLine Modernismo</h1> 
+          <ul class="nav-links">
+            <li><a href="index.html">TimeLine-Modernismo</a></li>
+            <li><a href="acervo.html">Acervo de Obras</a></li>
+            <li><a href="#">Mais TimeLines</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="player">
+        <div class="cover">
+            <img id="cover" src="" alt="Capa do Álbum">
+        </div>
+        <div class="controls">
+            <button id="prev">&#9664;</button>
+            <button id="play">PLAY</button>
+            <button id="next">&#9654;</button>
+        </div>
+        <div class="track-info">
+            <p id="track-name">Nome da Faixa</p>
+        </div>
+        <div class="progress-container">
+            <input id="progress" type="range" value="0" min="0" max="100">
+            <div id="time">
+                <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+            </div>
+        </div>
+        <audio id="audio">
+            Seu navegador não suporta o elemento audio.
+        </audio>
+    </div>
+    <script src="scripts/scriptPlayer.js"></script>
+</body>
+</html>
